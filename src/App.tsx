@@ -1,20 +1,10 @@
-import React, { useEffect } from 'react'
-import { getProducts } from './store/newProduct/index'
-import { useAppDispatch, useAppSelector } from './hook/redux'
+import React from 'react'
+
+import CustomHeader from './components/header'
+import GlobalStyle from './globalStyles'
 
 const App: React.FC = () => {
-  const dispatch = useAppDispatch()
-  const state = useAppSelector((state) => state.getNewProducts)
-
-  return (
-    <div>
-      <ul>
-        {state.product?.map((item) => (
-          <li key={item._id}>{item.title}</li>
-        ))}
-      </ul>
-    </div>
-  )
+  return <h1>Hello world</h1>
 }
 
 export default App
