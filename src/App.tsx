@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { getProducts } from './store/newProduct/index'
 import { useAppDispatch, useAppSelector } from './hook/redux'
 
