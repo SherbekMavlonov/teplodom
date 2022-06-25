@@ -1,10 +1,8 @@
 import React from 'react'
-
-import CustomHeader from './components/header'
-import GlobalStyle from './globalStyles'
+import Header from './components/header'
 
 const App: React.FC = () => {
-  return <h1>Hello world</h1>
+  return <Header />
 }
 
 export default App
