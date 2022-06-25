@@ -6,13 +6,14 @@ import { Provider } from 'react-redux'
 import store from './store/store'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container } from 'react-bootstrap'
-
+import GlobalStyle from './globalStyles'
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
 root.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Container>
+      <GlobalStyle />
+      <Container className='container'>
         <App />
       </Container>
     </BrowserRouter>
