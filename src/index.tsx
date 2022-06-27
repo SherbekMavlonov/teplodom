@@ -13,9 +13,9 @@ root.render(
   <Provider store={store}>
     <BrowserRouter>
       <GlobalStyle />
-      <Container className='container'>
+      
         <App />
-      </Container>
+  
     </BrowserRouter>
   </Provider>
 )
