@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-const globalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 h3,p{
   margin: 0;
 }
@@ -8,7 +8,8 @@ p{
   font-size: 13px;
 }
 .container{
-  max-width: 1440px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .w-60{
   width: 60% !important;
@@ -66,4 +67,4 @@ p{
   }
 }
 `
-export default globalStyle
+export default GlobalStyle
