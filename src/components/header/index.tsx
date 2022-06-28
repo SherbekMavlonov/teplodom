@@ -47,7 +47,8 @@ function Header() {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body className='w-100 d-flex justify-content-between'>
-              <label className='d-none d-xl-flex justify-content-center align-item-center w-60'>
+              <label className='d-none d-xl-flex justify-content-center align-item-center w-60 position-relative'>
+                <Search className='position-absolute icon' />
                 <FormControl
                   type='search'
                   placeholder='Search'
