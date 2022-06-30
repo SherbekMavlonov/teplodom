@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
 h3,p{
@@ -124,5 +124,5 @@ p{
     width: 30%;
   }
 }
-`;
-export default GlobalStyle;
+`
+export default GlobalStyle

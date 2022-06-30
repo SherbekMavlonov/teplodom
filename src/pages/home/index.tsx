@@ -1,16 +1,24 @@
-import React from "react";
-import { Wrapper } from "./styles";
+import React from 'react'
+import { Wrapper } from './styles'
+import Product from '../../components/product'
+import CategoryCard from '../../components/category'
+import Portfolio from '../../components/portfolio'
+import CustomCarousel from '../../components/carousel'
 
 const Home: React.FC = () => {
   return (
     <>
       <Wrapper>
-        <div className="home home__wrapper">
-          <div className="home__wrapper-title">Интернет магазин Теплодом</div>
-          <div className="home__content row">
-            <div className="col-6">
-              <div className="home__text ">
-                <p className="home__text-paragraph">
+        <CustomCarousel />
+        <CategoryCard />
+        <Product />
+        <Portfolio />
+        <div className='home home__wrapper'>
+          <div className='home__wrapper-title'>Интернет магазин Теплодом</div>
+          <div className='home__content row'>
+            <div className='col-6'>
+              <div className='home__text '>
+                <p className='home__text-paragraph'>
                   Компания Teplodom является лидером строительных материалов на
                   локальном рынке и предлагает широкий ассортимент строительных,
                   отделочных материалов и товаров для дома всем клиентам
@@ -30,16 +38,16 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            <div className="col-6">
-              <div className="home__img">
-                <img src="https://picsum.photos/550/400" alt="" />
+            <div className='col-6'>
+              <div className='home__img'>
+                <img src='https://picsum.photos/550/400' alt='img' />
               </div>
             </div>
           </div>
         </div>
       </Wrapper>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
