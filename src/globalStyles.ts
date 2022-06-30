@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 h3,p{
@@ -70,6 +70,19 @@ p{
   }
 }
 
+.simple-input{  
+  display: block;
+  width: 100%;
+  padding:12px 0 12px 20px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  &:focus{ 
+    outline: none;
+  }
+
+}
+
 .icon{
   width: 28px;
   height: 28px;
@@ -111,5 +124,5 @@ p{
     width: 30%;
   }
 }
-`
-export default GlobalStyle
+`;
+export default GlobalStyle;

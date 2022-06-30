@@ -7,6 +7,21 @@ export const Wrapper = styled.div`
     box-shadow: 0 2px 4px 0 #ddd;
     position: relative;
     overflow: hidden;
+    margin-bottom: 60px;
+
+    &__wrapper {
+      padding-top: 100px;
+    }
+
+    &__wrapper-title {
+      /* font-family: Inter; */
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding-bottom: 30px;
+    }
 
     &__sale {
       position: absolute;
