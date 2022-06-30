@@ -1,42 +1,33 @@
-import Footer from './components/footer'
-import Product from './components/product'
-import CategoryCard from './components/category'
-import Portfolio from './components/portfolio'
-
-import React from 'react'
-import CustomCarousel from './components/carousel'
-import Header from './components/header'
-
+import Footer from "./components/footer";
+import Product from "./components/product";
+import CategoryCard from "./components/category";
+import Portfolio from "./components/portfolio";
+import React from "react";
+import CustomCarousel from "./components/carousel";
+import Header from "./components/header";
+import Home from "./pages/home";
+import OpenProduct from "./components/openProduct";
+import Delivery from "./pages/delivery";
+import Contact from "./pages/contact";
+import ReturnProduct from "./pages/returnProduct";
 const App: React.FC = () => {
   return (
     <>
-      <div className='container'>
+      <div className="container">
+        <ReturnProduct />
+        <Contact />
+        <Delivery />
+        <OpenProduct />
         <Header />
         <CustomCarousel />
-        <div className='row my-5'>
-          <div className='col-3 '>
-            <Product />
-          </div>
-          <div className='col-3 '>
-            <Product />
-          </div>
-          <div className='col-3 '>
-            <Product />
-          </div>
-          <div className='col-3 '>
-            <Product />
-          </div>
-        </div>
-        <div className='row'>
-          <div className='col-2'>
-            <CategoryCard />
-          </div>
-        </div>
+        <CategoryCard />
+        <Product />
         <Portfolio />
+        <Home />
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

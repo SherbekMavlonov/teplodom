@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   .portfolio {
-    margin: 100px 0;
+    margin-top: 100px;
 
     &__title {
       /* font-family: Inter; */
