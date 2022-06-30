@@ -124,5 +124,21 @@ p{
     width: 30%;
   }
 }
+
+.navbar-item{
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #EEEDED;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    &.active{
+      background: linear-gradient(180deg, #FFB12A 0%, #EF8100 100%);
+      color: #fff;
+    }
+  }
 `
 export default GlobalStyle
