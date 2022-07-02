@@ -65,8 +65,6 @@ const Wrapper = styled.div`
       &-btn {
         height: 40px;
         width: 106px;
-        left: 165px;
-        top: 1391px;
         border-radius: 8px;
         border: none;
         color: white;

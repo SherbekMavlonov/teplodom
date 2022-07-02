@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
                     id="comment"
                     rows={4}
                   ></textarea>
-                  <button type="submit" className="contact__form-btn">
+                  <button type="submit" className="simple-btn">
                     Отправить
                   </button>
                 </form>

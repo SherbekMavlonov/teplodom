@@ -5,7 +5,7 @@ const agreement: React.FC = () => {
   return (
     <Wrapper>
       <div className="agreement">
-        <h2 className="agreement__title">Возврат товара</h2>
+        <h2 className="agreement__title">Пользовательское соглашение</h2>
         <p className="agreement__text">
           Публичная Оферта 1. Основные положения. 1.1. Данная Оферта является
           Договором интернет-магазина “Teolodomshop.com” по отношению к
