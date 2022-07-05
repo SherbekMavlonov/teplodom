@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useCallback, useEffect } from 'react'
 import { Wrapper } from './styles'
 import Product from '../../components/product'
 import CategoryCard from '../../components/category'
 import Portfolio from '../../components/portfolio'
 import CustomCarousel from '../../components/carousel'
-
+import { useAppSelector, useAppDispatch } from '../../hook/redux'
+import { getCategories } from '../../store/category/index'
 const Home: React.FC = () => {
+  const state = useAppSelector((state) => state)
+  const dispatch = useAppDispatch()
+
+  const initApp = useCallback(async () => {
+    await dispatch(getCategories())
+  }, [dispatch])
+
   return (
     <>
       <Wrapper>

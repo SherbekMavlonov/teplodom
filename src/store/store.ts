@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 import getNewProducts from './newProduct'
-
+import category from './category'
 export const store = configureStore({
   reducer: {
     getNewProducts,
+    category,
   },
 })
 
