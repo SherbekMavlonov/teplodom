@@ -8,9 +8,30 @@ const initialState: initialStateCategory = {
   loading: false,
 }
 
-const getCategories = createAsyncThunk('get-categories', () => {
-  return instance.get('all-category').then((data) => data.data)
-})
+export const getCategories = createAsyncThunk<Category[]>(
+  'categories/getCategories',
+  async (_, thunkApi) => {
+    try {
+      const data = await instance.get('all-category')
+      return data.data
+    } catch (err) {
+      thunkApi.rejectWithValue(err)
+    }
+  }
+)
+
+export const createCategories = createAsyncThunk<Object, Category>(
+  'categories/createCategories',
+  async (data, thunkAPI) => {
+    try {
+      const res = await instance.post('/new-category', data)
+      thunkAPI.dispatch(getCategories())
+      return res.data
+    } catch (err) {
+      thunkAPI.rejectWithValue(err)
+    }
+  }
+)
 
 const categorySlice = createSlice({
   name: 'Category',

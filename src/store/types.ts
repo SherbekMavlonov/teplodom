@@ -1,14 +1,13 @@
 // Product
 export type Product = {
   _id: string
-  title: string
-  description: string
-  img: string
+  title: string | null
+  description: string | null
+  img: string | null
   categories?: Array<String>
   price: string
   createdAt?: string
   updatedAt?: string
-  __v: number
 }
 export type initialStateNewProduct = {
   product: Product[]
@@ -28,7 +27,7 @@ export type Category = {
   img: string
 }
 
-export type initialStateCategory = {
+export interface initialStateCategory {
   error: string
   loading: boolean
   category: Category[]
