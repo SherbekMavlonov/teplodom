@@ -1,5 +1,4 @@
-import { AppDispatch } from "./../../store/store";
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   .home {
@@ -30,4 +29,4 @@ export const Wrapper = styled.div`
       overflow: hidden;
     }
   }
-`;
+`

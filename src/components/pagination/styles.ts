@@ -7,7 +7,6 @@ const Wrapper = styled.div`
       font-size: 30px;
       font-weight: 600;
       line-height: 36px;
-      margin-top: 60px;
     }
     &__card {
       max-width: 320px;

@@ -6,6 +6,7 @@ import { ReactComponent as Mail } from "../../assets/contact/charm_mail.svg";
 import { ReactComponent as Schedule } from "../../assets/contact/akar-icons_schedule.svg";
 import { ReactComponent as Time } from "../../assets/contact/carbon_time.svg";
 import GlobalStyle from "../../globalStyles";
+
 const Contact: React.FC = () => {
   return (
     <Wrapper>
@@ -99,7 +100,8 @@ const Contact: React.FC = () => {
                     id="comment"
                     rows={4}
                   ></textarea>
-                  <button type="submit" className="simple-btn">
+
+                  <button type="submit" className="contact__form-btn">
                     Отправить
                   </button>
                 </form>

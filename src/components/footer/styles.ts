@@ -82,7 +82,7 @@ export const Wrapper = styled.div`
       justify-content: center;
       &::after {
         content: "";
-        width: 35%;
+        width: 30%;
         height: 3px;
         border-radius: 3px;
         background-color: white;
@@ -93,7 +93,7 @@ export const Wrapper = styled.div`
       }
       &::before {
         content: "";
-        width: 35%;
+        width: 30%;
         height: 3px;
         border-radius: 3px;
         background-color: white;

@@ -63,7 +63,8 @@ p{
   border-radius: 15px;
   border: none;
   padding: 20px 14px 14px 46px;
-  width: 445px;
+  font-size: 20px;
+  width: 445px; 
   height: 56px;
   &:focus{
     box-shadow: 0px 2px 2px rgba(180, 180, 180, 0.25);
@@ -132,5 +133,21 @@ p{
     width: 30%;
   }
 }
+
+.navbar-item{
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #EEEDED;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    &.active{
+      background: linear-gradient(180deg, #FFB12A 0%, #EF8100 100%);
+      color: #fff;
+    }
+  }
 `;
 export default GlobalStyle;
