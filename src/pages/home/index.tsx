@@ -6,8 +6,10 @@ import Portfolio from '../../components/portfolio'
 import CustomCarousel from '../../components/carousel'
 import { useAppSelector, useAppDispatch } from '../../hook/redux'
 import { getCategories } from '../../store/category/index'
+
 const Home: React.FC = () => {
   const state = useAppSelector((state) => state)
+
   const dispatch = useAppDispatch()
 
   const initApp = useCallback(async () => {

@@ -1,25 +1,28 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import card from '../../assets/products/card1.png'
 import { Wrapper } from './styles'
 
 const CategoryCard: React.FC = () => {
   return (
-    <Wrapper>
-      <Card className='category category__card'>
-        <Card.Img
-          variant='top'
-          src={card}
-          className={'category__img p-3'}
-          alt='img'
-        />
-        <Card.Body className='category__content'>
-          <Card.Text className='category__title text-center'>
-            Сухи смеси
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Wrapper>
+    <Link to={'/'}>
+      <Wrapper>
+        <Card className='category category__card'>
+          <Card.Img
+            variant='top'
+            src={card}
+            className={'category__img p-3'}
+            alt='img'
+          />
+          <Card.Body className='category__content'>
+            <Card.Text className='category__title text-center'>
+              Сухи смеси
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </Wrapper>
+    </Link>
   )
 }
 
