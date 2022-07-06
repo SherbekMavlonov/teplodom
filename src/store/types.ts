@@ -35,3 +35,24 @@ export interface initialStateCategory {
 // Category
 
 // ===============================
+
+// Login
+
+// ===============================
+
+export interface IUser {
+  username: String
+  token: String
+  role?: Array<any>
+}
+
+export interface LoginState {
+  isLogin: boolean
+  user: IUser
+  isLoading: boolean
+  error: string
+}
+
+// Login
+
+// ================================
