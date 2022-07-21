@@ -1,7 +1,11 @@
 import React from 'react'
 
 const NewProducts: React.FC = () => {
-  return <div>NewProducts</div>
+  return (
+    <div>
+      <h1>Hello world</h1>
+    </div>
+  )
 }
 
 export default NewProducts
